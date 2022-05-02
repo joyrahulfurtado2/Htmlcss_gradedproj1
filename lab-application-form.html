@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab Test Form</title>
+    <link href="./lab-application-form.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#checkBtn').click(function () {
+                checked = $("input[type=checkbox]:checked").length;
+
+                if (!checked) {
+                    alert("You must check at least one checkbox.");
+                    return false;
+                }
+
+            });
+        });
+
+    </script>
+    <div class="Main-container">
+        <div class="container-login">
+            <div class="wrap-login">
+                <form class="login-form" id="my">
+                    <span class="form-title">1. Your Contact Details</span>
+                    <div class="wrap-input">
+                        <div class="two-col">
+                            <div class="col1">
+                                <input type="text" id="input" name="name" placeholder="Full Name" required />
+                            </div>
+                            <div class="col2">
+                                <input type="text" id="input" name="patient-id" placeholder="Patient-Id if exists"
+                                    required>
+                            </div>
+                            <div class="col1">
+                                <input type="text" id="input" name="contact-number" placeholder="Contact-Number"
+                                    required />
+                            </div>
+                            <div class="col2">
+                                <input type="email" id="input" name="email" placeholder="Email Id" required />
+                            </div>
+                        </div>
+                    </div>
+                    <span class="form-title">2. Address</span>
+                    <div class="wrap-input">
+                        <div class="two-col">
+                            <div class="col1">
+                                <input type="text" id="input" name="house-number" placeholder="House Number" />
+                            </div>
+                            <div class="col2">
+                                <input type="text" id="input" name="street" placeholder="Street" />
+                            </div>
+                        </div>
+                        <input type="text" id="input" name="area" placeholder="Area" />
+                        <label for="district">
+                            <h4>District</h4>
+                        </label>
+                        <select id="input" name="district">
+                            <option selected>--Choose--</option>
+                            <option>Kolhapur</option>
+                            <option>Mumbai City</option>
+                            <option>Nagpur</option>
+                            <option>Nashik</option>
+                            <option>Pune</option>
+                            <option>Raigad</option>
+                            <option>Ratnagiri</option>
+                            <option>Satara</option>
+                            <option>Thane</option>
+                        </select>
+                    </div>
+                    <span class="form-title">3. Choose the Test Type</span>
+                    <div class="wrap-input">
+                        <fieldset class="cbox">
+                            <div class="two-col">
+                                <div class="col1">
+                                    <label><input type="checkbox" name="Test type" value="CBC" />CBC</label>
+                                </div>
+                                <div class="col2">
+                                    <label><input type="checkbox" name="Test type" value="Complete Urine" />Complete
+                                        Urine</label>
+                                </div>
+                                <div class="col1">
+                                    <label><input type="checkbox" name="Test type" value="Lipid Profile" />Lipid
+                                        Profile</label>
+                                </div>
+                                <div class="col2">
+                                    <label><input type="checkbox" name="Test type" value="TSH" />Thyroid Stimulating
+                                        Hormone(TSH)</label>
+                                </div>
+                                <div class="col1">
+                                    <label><input type="checkbox" name="Test type" value="Glucose Test" />Glucose
+                                        Test</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <span class="form-title">4. Do you want a hard copy of the report also?</span>
+                    <div class="wrap-input">
+                        <div class="two-col">
+                            <div class="col1">
+                                <label><input type="radio" name="Requrement of hard copy" value="yes" />YES</label>
+                            </div>
+                            <div class="col2">
+                                <label><input type="radio" name="Requrement of hard copy" value="no" />NO</label>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="form-title">5. Select your comfortable date and time</span>
+                    <div class="wrap-input">
+                        <div class="two-col">
+                            <div class="col1">
+                                <label for="date">Date :</label>
+                                <input type="date" id="input" name="date" />
+                            </div>
+                            <div class="col2">
+                                <label for="time">Time</label>
+                                <input type="time" id="input" name="time" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="login-pic">
+                    <img src="Images\Lab-Test\lab-test.jpg" alt="IMG">
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <input type="reset" value="Reset all input" class="btn" form="my" />
+        <button class="btn" form="my" id="checkBtn">Submit</button>
+    </center>
+</body>
+
+</html>

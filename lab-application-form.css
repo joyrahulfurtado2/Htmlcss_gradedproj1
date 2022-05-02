@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  font-weight: 400;
+}
+.Main-container {
+  width: 100%;
+  margin: 0 auto;
+}
+.container-login {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.wrap-login {
+  height: 500px;
+  width: 900px;
+  background: white;
+  border-radius: 10px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.login-pic img {
+  width: 400px;
+  height: 700px;
+  align-items: right;
+  position: sticky;
+}
+.login-form {
+  width: 450px;
+}
+.form-title {
+  font-family: "poppins", sans-serif;
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+  font-weight: 700;
+  width: 100%;
+  display: block;
+  padding-bottom: 10px;
+}
+.wrap-input {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+#input {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: black;
+  border: 0;
+  border-bottom: 2px solid #a09e9e;
+  outline: none;
+  display: block;
+  width: 200px;
+  height: 30px;
+  padding: 0 10px 0 10px;
+  margin-bottom: 20px;
+}
+.two-col {
+  overflow: hidden;
+}
+.two-col .col1,
+.two-col .col2 {
+  width: 49%;
+}
+.two-col .col1 {
+  float: left;
+}
+.two-col .col2 {
+  float: right;
+}
+.cbox {
+  padding: 10px;
+}
+.btn {
+  background-color: rgb(202, 5, 202);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
